@@ -1,0 +1,123 @@
+﻿2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 548 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:27:43 [[33MWARN[39M]: 401 - Access token required - /api/v1/inventory
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/inventory HTTP/1.1" 401 51 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:27:43 [[33MWARN[39M]: 409 - Email already registered - /api/v1/auth/register
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 54 "-" "-"
+2026-03-30 11:27:43 [[33MWARN[39M]: 400 - Validation failed - /api/v1/auth/register
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 166 "-" "-"
+2026-03-30 11:27:43 [[33MWARN[39M]: 400 - Validation failed - /api/v1/auth/register
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 120 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 543 "-" "-"
+2026-03-30 11:27:43 [[33MWARN[39M]: 403 - Role 'donor' is not authorized to access this resource - /api/v1/inventory
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/inventory HTTP/1.1" 403 84 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/inventory HTTP/1.1" 201 406 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "GET /api/v1/inventory HTTP/1.1" 200 748 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/inventory HTTP/1.1" 201 406 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "GET /api/v1/inventory?bloodGroup=O- HTTP/1.1" 200 449 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "GET /api/v1/inventory/availability/O- HTTP/1.1" 200 416 "-" "-"
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 605 "-" "-"
+node.exe : PASS src/tests/
+inventory.test.js
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (P  
+  ASS src/tests/invento   
+ ry.test.js:String) []    
+, RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  Inventory API
+    POST /api/v1/inventory
+      ΓêÜ should add 
+inventory (admin) (43 ms)
+      ΓêÜ should reject 
+without auth (10 ms)
+      ΓêÜ should reject 
+donor role (292 ms)
+    GET /api/v1/inventory
+      ΓêÜ should get all 
+inventory (35 ms)
+      ΓêÜ should filter 
+by blood group (48 ms)
+    GET /api/v1/inventory/
+availability/:bloodGroup
+      ΓêÜ should check 
+availability (44 ms)
+
+2026-03-30 11:27:43 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:43 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 632 "-" "-"
+2026-03-30 11:27:44 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:44 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 605 "-" "-"
+2026-03-30 11:27:44 [[33MWARN[39M]: 401 - Invalid email or password - /api/v1/auth/login
+2026-03-30 11:27:44 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:44 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 55 "-" "-"
+2026-03-30 11:27:44 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:44 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 605 "-" "-"
+2026-03-30 11:27:44 [[33MWARN[39M]: 401 - Invalid email or password - /api/v1/auth/login
+2026-03-30 11:27:44 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:44 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 55 "-" "-"
+2026-03-30 11:27:45 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:45 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 609 "-" "-"
+2026-03-30 11:27:45 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:45 +0000] "GET /api/v1/auth/me HTTP/1.1" 200 318 "-" "-"
+2026-03-30 11:27:45 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:45 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 609 "-" "-"
+2026-03-30 11:27:45 [[33MWARN[39M]: 401 - Access token required - /api/v1/auth/me
+2026-03-30 11:27:45 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:45 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 51 "-" "-"
+2026-03-30 11:27:45 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:45 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 609 "-" "-"
+2026-03-30 11:27:45 [[33MWARN[39M]: 401 - Invalid token - /api/v1/auth/me
+2026-03-30 11:27:45 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:45 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 43 "-" "-"
+2026-03-30 11:27:45 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:45 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 609 "-" "-"
+2026-03-30 11:27:45 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:57:45 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 64 "-" "-"
+PASS 
+src/tests/auth.test.js 
+(6.582 s)
+  Auth API - Registration
+    ΓêÜ should register a 
+new user (443 ms)
+    ΓêÜ should not 
+register with existing 
+email (297 ms)
+    ΓêÜ should not 
+register without required 
+fields (10 ms)
+    ΓêÜ should not 
+register with invalid 
+email (11 ms)
+  Auth API - Login
+    ΓêÜ should login with 
+valid credentials (615 ms)
+    ΓêÜ should not login 
+with wrong password (561 
+ms)
+    ΓêÜ should not login 
+with non-existent email 
+(280 ms)
+  Auth API - Profile & 
+Logout
+    ΓêÜ should get user 
+profile with valid token 
+(282 ms)
+    ΓêÜ should reject 
+without token (292 ms)
+    ΓêÜ should reject 
+with invalid token (282 
+ms)
+    ΓêÜ should logout 
+successfully (285 ms)
+
+Test Suites: 2 passed, 2 
+total
+Tests:       17 passed, 
+17 total
+Snapshots:   0 total
+Time:        6.864 s, 
+estimated 7 s
+Ran all test suites.

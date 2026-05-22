@@ -1,0 +1,263 @@
+﻿2026-03-30 11:18:33 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:33 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 548 "-" "-"
+2026-03-30 11:18:33 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:33 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:18:33 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:33 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:18:33 [[33MWARN[39M]: 401 - Access token required - /api/v1/inventory
+2026-03-30 11:18:33 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:33 +0000] "POST /api/v1/inventory HTTP/1.1" 401 - "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:18:34 [[33MWARN[39M]: 409 - Email already registered - /api/v1/auth/register
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 543 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 543 "-" "-"
+2026-03-30 11:18:34 [[33MWARN[39M]: 400 - Validation failed - /api/v1/auth/register
+2026-03-30 11:18:34 [[33MWARN[39M]: 403 - Role 'donor' is not authorized to access this resource - /api/v1/inventory
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/inventory HTTP/1.1" 403 854 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 - "-" "-"
+2026-03-30 11:18:34 [[33MWARN[39M]: 400 - Validation failed - /api/v1/auth/register
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 988 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/inventory HTTP/1.1" 201 406 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "GET /api/v1/inventory HTTP/1.1" 200 748 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/inventory HTTP/1.1" 201 406 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "GET /api/v1/inventory?bloodGroup=O- HTTP/1.1" 200 449 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "GET /api/v1/inventory/availability/O- HTTP/1.1" 200 416 "-" "-"
+node.exe : PASS src/tests/
+inventory.test.js (5.204 
+s)
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (P  
+  ASS src/tests/...st.j   
+ s (5.204 s):String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  Inventory API
+    POST /api/v1/inventory
+      ΓêÜ should add 
+inventory (admin) (37 ms)
+      ΓêÜ should reject 
+without auth (26 ms)
+      ΓêÜ should reject 
+donor role (348 ms)
+    GET /api/v1/inventory
+      ΓêÜ should get all 
+inventory (55 ms)
+      ΓêÜ should filter 
+by blood group (39 ms)
+    GET /api/v1/inventory/
+availability/:bloodGroup
+      ΓêÜ should check 
+availability (22 ms)
+
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:18:34 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:34 +0000] "POST /api/v1/auth/login HTTP/1.1" 200 597 "-" "-"
+2026-03-30 11:18:35 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:35 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:18:35 [[33MWARN[39M]: 401 - Invalid email or password - /api/v1/auth/login
+2026-03-30 11:18:35 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:35 +0000] "POST /api/v1/auth/login HTTP/1.1" 401 472 "-" "-"
+2026-03-30 11:18:35 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:35 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:18:35 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:35 +0000] "POST /api/v1/auth/login HTTP/1.1" 429 89 "-" "-"
+2026-03-30 11:18:35 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:35 +0000] "POST /api/v1/auth/register HTTP/1.1" 429 89 "-" "-"
+2026-03-30 11:18:35 [[33MWARN[39M]: 401 - Access token required - /api/v1/auth/me
+2026-03-30 11:18:35 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:35 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 - "-" "-"
+2026-03-30 11:18:36 [[33MWARN[39M]: 401 - Invalid token - /api/v1/auth/me
+2026-03-30 11:18:36 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:36 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 - "-" "-"
+2026-03-30 11:18:36 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:48:36 +0000] "POST /api/v1/auth/register HTTP/1.1" 429 89 "-" "-"
+FAIL 
+src/tests/auth.test.js 
+(7.031 s)
+  Auth API
+    POST 
+/api/v1/auth/register
+      ΓêÜ should register 
+a new user (559 ms)
+      ΓêÜ should not 
+register with existing 
+email (359 ms)
+      ΓêÜ should not 
+register without required 
+fields (18 ms)
+      ΓêÜ should not 
+register with invalid 
+email (8 ms)
+    POST 
+/api/v1/auth/login
+      ΓêÜ should login 
+with valid credentials 
+(756 ms)
+      ΓêÜ should not 
+login with wrong password 
+(660 ms)
+      ├ù should not login 
+with non-existent email 
+(335 ms)
+    GET /api/v1/auth/me
+      ├ù should get user 
+profile with valid token 
+(5 ms)
+      ΓêÜ should reject 
+without token (12 ms)
+      ΓêÜ should reject 
+with invalid token (9 ms)
+    POST 
+/api/v1/auth/logout
+      ├ù should logout 
+successfully (7 ms)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/login ΓÇ║ 
+should not login with 
+non-existent email
+
+    expected 401 
+"Unauthorized", got 429 
+"Too Many Requests"
+
+    [0m [90m 100 |[39m 
+        [33m.[39mpost([
+32m'/api/v1/auth/login'[3
+9m)
+     [90m 101 |[39m     
+    [33m.[39msend({ 
+email[33m:[39m [32m'noo
+ne@example.com'[39m[33m,
+[39m password[33m:[39m 
+[32m'password123'[39m })
+    
+[31m[1m>[22m[39m[90m 
+102 |[39m         [33m.
+[39mexpect([35m401[39m)
+[33m;[39m
+     [90m     |[39m     
+     [31m[1m^[22m[39m
+     [90m 103 |[39m
+     [90m 104 |[39m     
+  expect(res[33m.[39mbod
+y[33m.[39msuccess)[33m.
+[39mtoBe([36mfalse[39m)
+[33m;[39m
+     [90m 105 |[39m     
+})[33m;[39m[0m
+
+      at Object.expect (sr
+c/tests/auth.test.js:102:1
+0)
+      ----
+      at 
+Test._assertStatus (node_m
+odules/supertest/lib/test.
+js:309:14)
+      at node_modules/supe
+rtest/lib/test.js:365:13
+      at 
+Test._assertFunction (node
+_modules/supertest/lib/tes
+t.js:342:13)
+      at Test.assert (node
+_modules/supertest/lib/tes
+t.js:195:23)
+      at localAssert (node
+_modules/supertest/lib/tes
+t.js:138:14)
+      at 
+Server.<anonymous> (node_m
+odules/supertest/lib/test.
+js:152:11)
+
+  ΓùÅ Auth API ΓÇ║ GET 
+/api/v1/auth/me ΓÇ║ 
+should get user profile 
+with valid token
+
+    TypeError: Cannot 
+read properties of 
+undefined (reading 
+'accessToken')
+
+    [0m [90m 112 |[39m 
+        [33m.[39msend(te
+stUser)[33m;[39m
+     [90m 113 |[39m
+    
+[31m[1m>[22m[39m[90m 
+114 |[39m       
+[36mconst[39m token 
+[33m=[39m registerRes[3
+3m.[39mbody[33m.[39mdat
+a[33m.[39maccessToken[3
+3m;[39m
+     [90m     |[39m     
+                          
+            
+[31m[1m^[22m[39m
+     [90m 115 |[39m
+     [90m 116 |[39m     
+  [36mconst[39m res 
+[33m=[39m 
+[36mawait[39m 
+request(app)
+     [90m 117 |[39m     
+    [33m.[39m[36mget[3
+9m([32m'/api/v1/auth/me'
+[39m)[0m
+
+      at 
+Object.accessToken (src/te
+sts/auth.test.js:114:43)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/logout ΓÇ║ 
+should logout successfully
+
+    TypeError: Cannot 
+read properties of 
+undefined (reading 
+'accessToken')
+
+    [0m [90m 140 |[39m 
+        [33m.[39msend(te
+stUser)[33m;[39m
+     [90m 141 |[39m
+    
+[31m[1m>[22m[39m[90m 
+142 |[39m       
+[36mconst[39m token 
+[33m=[39m registerRes[3
+3m.[39mbody[33m.[39mdat
+a[33m.[39maccessToken[3
+3m;[39m
+     [90m     |[39m     
+                          
+            
+[31m[1m^[22m[39m
+     [90m 143 |[39m
+     [90m 144 |[39m     
+  [36mconst[39m res 
+[33m=[39m 
+[36mawait[39m 
+request(app)
+     [90m 145 |[39m     
+    [33m.[39mpost([32m'
+/api/v1/auth/logout'[39m)
+[0m
+
+      at 
+Object.accessToken (src/te
+sts/auth.test.js:142:43)
+
+Test Suites: 1 failed, 1 
+passed, 2 total
+Tests:       3 failed, 14 
+passed, 17 total
+Snapshots:   0 total
+Time:        7.326 s
+Ran all test suites.

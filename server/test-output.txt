@@ -1,0 +1,1072 @@
+﻿node.exe : (node:2744) 
+[MONGOOSE] Warning: 
+Duplicate schema index on 
+{"email":1} found. This 
+is often due to declaring 
+an index using both 
+"index: true" and 
+"schema.index()". Please 
+remove the duplicate 
+index definition.
+At line:1 char:1
++ & "C:\Program 
+Files\nodejs/node.exe" 
+"C:\Program 
+Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: ((  
+  node:2744) [MO...dex    
+ definition.:String) [    
+], RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+(Use `node 
+--trace-warnings ...` to 
+show where the warning 
+was created)
+(node:13252) [MONGOOSE] 
+Warning: Duplicate schema 
+index on {"email":1} 
+found. This is often due 
+to declaring an index 
+using both "index: true" 
+and "schema.index()". 
+Please remove the 
+duplicate index 
+definition.
+(Use `node 
+--trace-warnings ...` to 
+show where the warning 
+was created)
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 548 "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:16:03 [[33MWARN[39M]: 401 - Access token required - /api/v1/inventory
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/inventory HTTP/1.1" 401 - "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:16:03 [[33MWARN[39M]: 409 - Email already registered - /api/v1/auth/register
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/auth/register HTTP/1.1" 409 543 "-" "-"
+2026-03-30 11:16:03 [[33MWARN[39M]: 400 - Validation failed - /api/v1/auth/register
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 543 "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 - "-" "-"
+2026-03-30 11:16:03 [[33MWARN[39M]: 403 - Role 'donor' is not authorized to access this resource - /api/v1/inventory
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/inventory HTTP/1.1" 403 854 "-" "-"
+2026-03-30 11:16:03 [[33MWARN[39M]: 400 - Validation failed - /api/v1/auth/register
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/auth/register HTTP/1.1" 400 988 "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/inventory HTTP/1.1" 201 406 "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/inventory HTTP/1.1" 201 406 "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "POST /api/v1/inventory HTTP/1.1" 201 402 "-" "-"
+2026-03-30 11:16:03 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:03 +0000] "GET /api/v1/inventory/availability/O- HTTP/1.1" 200 416 "-" "-"
+FAIL src/tests/inventory.t
+est.js
+  ΓùÅ Inventory API ΓÇ║ 
+POST /api/v1/inventory 
+ΓÇ║ should add inventory 
+(admin)
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Inventory API ΓÇ║ 
+POST /api/v1/inventory 
+ΓÇ║ should reject without 
+auth
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Inventory API ΓÇ║ 
+POST /api/v1/inventory 
+ΓÇ║ should reject donor 
+role
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Inventory API ΓÇ║ 
+POST /api/v1/inventory 
+ΓÇ║ should reject donor 
+role
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Inventory API ΓÇ║ 
+GET /api/v1/inventory ΓÇ║ 
+should get all inventory
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Inventory API ΓÇ║ 
+GET /api/v1/inventory ΓÇ║ 
+should get all inventory
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Inventory API ΓÇ║ 
+GET /api/v1/inventory ΓÇ║ 
+should filter by blood 
+group
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Inventory API ΓÇ║ 
+GET /api/v1/inventory ΓÇ║ 
+should filter by blood 
+group
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Inventory API ΓÇ║ 
+GET /api/v1/inventory/avai
+lability/:bloodGroup ΓÇ║ 
+should check availability
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Inventory API ΓÇ║ 
+GET /api/v1/inventory/avai
+lability/:bloodGroup ΓÇ║ 
+should check availability
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+
+  ΓùÅ Test suite failed 
+to run
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+2026-03-30 11:16:04 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:04 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:16:04 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:04 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:16:04 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:04 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:16:05 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:05 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:16:05 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:05 +0000] "GET /api/v1/auth/me HTTP/1.1" 200 301 "-" "-"
+2026-03-30 11:16:05 [[33MWARN[39M]: 401 - Access token required - /api/v1/auth/me
+2026-03-30 11:16:05 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:05 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 - "-" "-"
+2026-03-30 11:16:05 [[33MWARN[39M]: 401 - Invalid token - /api/v1/auth/me
+2026-03-30 11:16:05 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:05 +0000] "GET /api/v1/auth/me HTTP/1.1" 401 - "-" "-"
+2026-03-30 11:16:05 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:05 +0000] "POST /api/v1/auth/register HTTP/1.1" 201 570 "-" "-"
+2026-03-30 11:16:05 [[32MINFO[39M]: ::ffff:127.0.0.1 - - [30/Mar/2026:05:46:05 +0000] "POST /api/v1/auth/logout HTTP/1.1" 200 64 "-" "-"
+FAIL 
+src/tests/auth.test.js 
+(6.23 s)
+  Auth API
+    POST 
+/api/v1/auth/register
+      ├ù should register 
+a new user (562 ms)
+      ├ù should not 
+register with existing 
+email (397 ms)
+      ├ù should not 
+register without required 
+fields (23 ms)
+      ├ù should not 
+register with invalid 
+email (16 ms)
+    POST 
+/api/v1/auth/login
+      ├ù should login 
+with valid credentials 
+(395 ms)
+      ├ù should not login 
+with wrong password (382 
+ms)
+      ├ù should not login 
+with non-existent email 
+(359 ms)
+    GET /api/v1/auth/me
+      ├ù should get user 
+profile with valid token 
+(408 ms)
+      ├ù should reject 
+without token (21 ms)
+      ├ù should reject 
+with invalid token (10 ms)
+    POST 
+/api/v1/auth/logout
+      ├ù should logout 
+successfully (416 ms)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/register ΓÇ║ 
+should register a new user
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/register ΓÇ║ 
+should not register with 
+existing email
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/register ΓÇ║ 
+should not register with 
+existing email
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/register ΓÇ║ 
+should not register 
+without required fields
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/register ΓÇ║ 
+should not register with 
+invalid email
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/login ΓÇ║ 
+should login with valid 
+credentials
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/login ΓÇ║ 
+should not login with 
+wrong password
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/login ΓÇ║ 
+should not login with 
+non-existent email
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ GET 
+/api/v1/auth/me ΓÇ║ 
+should get user profile 
+with valid token
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ GET 
+/api/v1/auth/me ΓÇ║ 
+should get user profile 
+with valid token
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ GET 
+/api/v1/auth/me ΓÇ║ 
+should reject without 
+token
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ GET 
+/api/v1/auth/me ΓÇ║ 
+should reject with 
+invalid token
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/logout ΓÇ║ 
+should logout successfully
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+  ΓùÅ Auth API ΓÇ║ POST 
+/api/v1/auth/logout ΓÇ║ 
+should logout successfully
+
+    Cannot set headers 
+after they are sent to 
+the client
+
+    [0m [90m  9 |[39m  
+   [36mconst[39m 
+responseTime [33m=[39m d
+urationMs[33m.[39mtoFixe
+d([35m2[39m)[33m;[39m
+     [90m 10 |[39m
+    
+[31m[1m>[22m[39m[90m 
+11 |[39m     res[33m.[3
+9msetHeader([32m'X-Respon
+se-Time'[39m[33m,[39m 
+[32m`${responseTime}ms`[3
+9m)[33m;[39m
+     [90m    |[39m      
+   [31m[1m^[22m[39m
+     [90m 12 |[39m
+     [90m 13 |[39m     
+[36mconst[39m logData 
+[33m=[39m {
+     [90m 14 |[39m      
+ method[33m:[39m req[33
+m.[39mmethod[33m,[39m[
+0m
+
+      at 
+ServerResponse.setHeader (
+src/middleware/metrics.mid
+dleware.js:11:9)
+
+Test Suites: 2 failed, 2 
+total
+Tests:       17 failed, 
+17 total
+Snapshots:   0 total
+Time:        6.554 s, 
+estimated 7 s
+Ran all test suites.

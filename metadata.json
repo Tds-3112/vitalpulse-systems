@@ -1,0 +1,5 @@
+{
+  "name": "VitalPulse Systems",
+  "description": "A high-end clinical blood bank management system featuring real-time inventory tracking, donor registry, and operational request queues.",
+  "requestFramePermissions": []
+}
